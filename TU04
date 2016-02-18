@@ -1,0 +1,9 @@
+ScreaM = 1995
+MyAge = int(input('When were you born?'))
+AgeDifference = MyAge - ScreaM
+print("ScreaM is %d years older than you" % AgeDifference)
+
+XavierBorn = MyAge
+TheirAge = int(input('Choose a celebrity, When were they born?'))
+AgeDifference = XavierBorn - TheirAge
+print("Your Celebrity is %d years older than you" % AgeDifference)
