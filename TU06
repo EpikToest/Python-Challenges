@@ -1,0 +1,6 @@
+your_height = int(input("Enter your height: "))
+their_height = int(input("Enter someone else's height: "))
+if your_height > their_height:
+    print("You're taller")
+if their_height > your_height:
+    print("They're taller")
