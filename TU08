@@ -1,0 +1,7 @@
+while True:
+    subject_status = input('Which subject do you love the most? ')
+    if subject_status in ['cs', 'computer science', 'Computer Science']:
+        print("Wise choice")
+        break
+    else:
+        print("no")
