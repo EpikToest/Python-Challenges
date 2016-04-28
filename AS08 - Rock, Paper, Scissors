@@ -1,0 +1,31 @@
+print("~###~ Rock Paper Scissors! ~###~")
+
+import random
+
+rps = ['rock', 'paper', 'scissors']
+comp_input = random.choice(rps)
+# print
+
+player_input = input("Rock, Paper or Scissors? ")
+
+if player_input in rps:
+    print(comp_input)
+
+if player_input == 'rock' and comp_input == 'rock':
+    print("Draw!")
+if player_input == 'rock' and comp_input == 'paper':
+    print("You lose!")
+if player_input == 'rock' and comp_input == 'scissors':
+    print("You win!")
+if player_input == 'paper' and comp_input == 'rock':
+    print("You win!")
+if player_input == 'paper' and comp_input == 'paper':
+    print("Draw!")
+if player_input == 'paper' and comp_input == 'scissors':
+    print("You lose!")
+if player_input == 'scissors' and comp_input == 'rock':
+    print("You lose!")
+if player_input == 'scissors' and comp_input == 'paper':
+    print("You win!")
+if player_input == 'scissors' and comp_input == 'scissors':
+    print("Draw!")
