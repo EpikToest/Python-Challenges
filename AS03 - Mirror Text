@@ -1,0 +1,4 @@
+print("### Welcome to the trick shop ###")
+word = input('Enter a word: ')
+letters = list(word)
+print(*letters[::-1])
