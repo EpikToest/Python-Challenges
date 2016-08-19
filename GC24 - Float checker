@@ -1,0 +1,8 @@
+while True:
+    nm = input('Enter a number: ')
+
+    try:
+        nm = float(nm)
+        break
+    except ValueError:
+        print('not a float')
