@@ -1,0 +1,104 @@
+# Question 1
+# All work and no play makes Jack a dull boy.
+
+all = 'All'
+
+work = 'work'
+
+And = 'and'
+
+no = 'no'
+
+play = 'play'
+
+makes = 'makes'
+
+Jack = 'Jack'
+
+a = 'a'
+
+dull = 'dull'
+
+boy = 'boy'
+
+print(all + ' ' + work + ' ' + And + ' ' + no + ' ' + play + ' ' + makes + ' ' + Jack + ' ' + a + ' ' + dull + ' ' + boy + '.')
+
+
+
+# Question 2
+# Add parenthesis to the expression 6 * 1 - 2 to change its value from 4 to -6.
+
+expression_one = 6 * 1 - 2
+print(expression_one)
+
+expression_two = 6 * (1 - 2)
+print(expression_two)
+
+
+
+# Question 3
+# Place a comment before a line of code that previously worked, and record what happens when you rerun the program.
+
+print('again' * 50)
+
+# Nothing happens
+
+
+# Question 4
+# Start the Python interpreter and enter bruce + 4 at the prompt.
+# This will give you an error:
+# NameError: name 'bruce' is not defined
+# Assign a value to bruce so that bruce + 4 evaluates to 10.
+
+bruce = 6
+print(bruce + 4)
+
+
+
+# Question 5
+
+p = int(10000)
+
+n = int(12)
+
+r = float(0.08)
+
+t = int(input('number of years that the money will be compounded for: \n'))
+
+a = p * (1 + (r / n)) ** (n * t)
+
+print(int(a))
+
+
+
+# Question 6
+# Evaluate the following numerical expressions in your head, then use the Python interpreter to check your results:
+print(5 % 2)
+print(9 % 5)
+print(15 % 12)
+print(12 % 15)
+print(6 % 6)
+print(0 % 7)
+#print(7 % 0)
+
+# Question 7
+
+time = 2
+
+alarm = 51
+
+print((time + alarm) / 12)
+
+
+
+# Question 8
+
+usertime = input("What time is it?\n")
+userwait = input("How many hours to wait?\n")
+timeresult = (int(usertime) + int(userwait))
+if timeresult > 24:
+    timelarge = timeresult % 24
+    print(timelarge)
+else: print(int(timeresult))
+
+
