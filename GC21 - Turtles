@@ -1,0 +1,225 @@
+# Question 1
+
+print("We like Python's turtles!\n" * 1000)
+
+# Question 2
+# Give three attributes of your cellphone object. Give three methods of your cellphone.
+
+import turtle
+wn = turtle.Screen()
+cellphone = turtle.Turtle()
+
+while True:
+    cellphone.forward(10)
+    cellphone.left(20)
+    cellphone.forward(5)
+    cellphone.right(20)
+   
+# Question 3
+# Write a program that uses a for loop to print
+# One of the months of the year is January
+# One of the months of the year is February
+# ...
+
+for f in ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']:
+    month = "One of the months of the year is " + f + '.'
+    print(month)
+
+# Question 4
+# Suppose our turtle tess is at heading 0 — facing east. We execute the statement tess.left(3645). What does tess do, and what is her final heading?
+
+import turtle
+wn = turtle.Screen()
+wn.bgcolor("black")
+wn.title("Hello, Tess!")
+
+tess = turtle.Turtle()
+tess.color("white")
+tess.pensize(3)
+
+tess.left(3645)
+
+wn.mainloop()
+
+# Tess just spins around the  10 times and then faces north-east.
+
+
+# Question 5
+# Assume you have the assignment xs = [12, 10, 32, 3, 66, 17, 42, 99, 20]
+# a. Write a loop that prints each of the numbers on a new line.
+# b. Write a loop that prints each number and its square on a new line.
+# c. Write a loop that adds all the numbers from the list into a variable called total. You should set the total variable to have the value 0 before you start adding them up, and print the value in total after the loop has completed.
+# d. Print the product of all the numbers in the list. (product means all multiplied together)
+
+xs = [12, 10, 32, 3, 66, 17, 42, 99, 20]
+for i in xs:
+    print(i)
+
+print(" ")
+
+for i in xs:
+    print(i, i**2)
+
+print(" ")
+
+
+# Question 6
+# Use for loops to make a turtle draw these regular polygons (regular means all sides the same lengths, all angles the same):
+# - An equilateral triangle
+# - A square
+# - A hexagon (six sides)
+# - An octagon (eight sides)
+
+import turtle
+wn = turtle.Screen()
+wn.bgcolor("black")
+wn.title("Hello, A!")
+
+a = turtle.Turtle()
+a.pensize(2)
+
+a.color("blue")
+for i in [0,1,2,]:
+    a.forward(100)
+    a.left(120)
+a.color("green")
+for i in [0,1,2,3]:
+    a.forward(100)
+    a.left(90)
+a.color("yellow")
+for i in [0,1,2,3,4,5]:
+    a.forward(100)
+    a.left(60)
+a.color("red")
+for i in [0,1,2,3,4,5,6,7]:
+    a.forward(100)
+    a.left(45)
+
+wn.mainloop()
+
+# Question 7
+# A drunk pirate makes a random turn and then takes 100 steps forward, makes another random turn,
+# takes another 100 steps, turns another random amount, etc.
+# A social science student records the angle of each turn before the next 100 steps are taken.
+# Her experimental data is [160, -43, 270, -97, -43, 200, -940, 17, -86].
+# (Positive angles are counter-clockwise.)
+# Use a turtle to draw the path taken by our drunk friend.
+
+import turtle
+wn = turtle.Screen()
+wn.bgcolor("black")
+wn.title("Arrrg!")
+
+pirate = turtle.Turtle()
+pirate.color("yellow")
+pirate.pensize(2)
+
+pirate.left(160)
+pirate.forward(100)
+pirate.left(-43)
+pirate.forward(100)
+pirate.left(270)
+pirate.forward(100)
+pirate.left(-97)
+pirate.forward(100)
+pirate.left(-43)
+pirate.forward(100)
+pirate.left(200)
+pirate.forward(100)
+pirate.left(-940)
+pirate.forward(100)
+pirate.left(17)
+pirate.forward(100)
+pirate.left(-86)
+pirate.forward(100)
+
+print(pirate.heading())
+
+wn.mainloop()
+
+# Question 3
+# If you were going to draw a regular polygon with 18 sides, what angle would you need to turn the turtle at each corner?
+
+import turtle
+wn = turtle.Screen()
+wn.bgcolor("black")
+wn.title("Hello, A!")
+
+a = turtle.Turtle()
+a.pensize(2)
+
+a.color("blue")
+for i in [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]:
+    a.forward(10)
+    a.left(20)
+
+
+wn.mainloop()
+
+# Question 10
+# At the interactive prompt, anticipate what each of the following lines will do, and then record what happens.
+# Score yourself, giving yourself one point for each one you anticipate correctly:
+
+import turtle
+wn = turtle.Screen()
+tess = turtle.Turtle()
+tess.right(90)
+tess.left(3600)
+tess.right(-90)
+tess.speed(10)
+tess.left(3600)
+tess.speed(0)
+tess.left(3645)
+tess.forward(-100)
+
+# Question 11
+# Write a program to draw a star
+
+import turtle
+wn = turtle.Screen()
+wn.bgcolor("black")
+wn.title("I'ma mf starboi")
+
+a = turtle.Turtle()
+a.pensize(10)
+
+a.color("magenta")
+for i in [0,1,2,3,4]:
+    a.forward(150)
+    a.right(144)
+
+
+
+wn.mainloop()
+
+# Question 12
+# Make a clock
+
+import turtle
+wn = turtle.Screen()
+wn.bgcolor("black")
+wn.title("Tick Tock")
+
+a = turtle.Turtle()
+a.pensize(3)
+a.shape("turtle")
+a.color("magenta")
+
+
+for i in range(12):
+    a.penup()
+    a.forward(100)
+    a.pendown()
+    a.forward(10)
+    a.penup()
+    a.forward(20)
+    a.stamp()
+    a.backward(130)
+    a.right(30)
+
+
+
+
+
+wn.mainloop()
+
