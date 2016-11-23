@@ -1,0 +1,76 @@
+# Python - Chapter 7 - Q1
+# Count the number of odd numbers in a list
+
+numbers = [1, 5, 7, 19, 21, 46, 17]
+
+
+def is_odd(n):
+    count = 0
+    for i in numbers:
+        digit = i % 2
+        if digit != 0:
+            count += 1
+        n //= 10
+    print(count)
+
+is_odd(numbers[1])
+
+
+# Python - Chapter 7 - Q2
+# Sum the even numbers in a list
+numbers = [1, 5, 7, 19, 21, 46, 17, 20, 2, 44, 1, 6]
+even_numbers = []
+for i in numbers:
+    digit = i % 2
+    if digit == 0:
+        even_numbers.append(i)
+print(even_numbers)
+print(sum(even_numbers))
+
+
+# Python - Chapter 7 - Q3
+# Sum the negative numbers in a list
+numbers = [1, 5, 7, -19, 21, -46, 17, -20, -2, 44, 1, -6]
+negative_numbers = []
+for i in numbers:
+    if i < 0:
+        negative_numbers.append(i)
+print(negative_numbers)
+print(sum(negative_numbers))
+
+
+# Python - Chapter 7 - Q4
+# Count the number of words with 5 letters  in a list
+words = ['Cat', 'Dog', 'Phone', 'Keyboard', 'Mouse', 'State']
+count = 0
+for i in words:
+    digit = len(i)
+    if digit == 5:
+        count += 1
+print(count)
+
+# Python - Chapter 7 - Q5
+# Sum a list except for the first even number
+numbers = [1, 5, 7, 19, 21, 46, 17, 20, 2, 44, 1, 6]
+even_numbers = []
+count = 0
+for i in numbers:
+    digit = i % 2
+    if digit == 0:
+        if count == 0:
+            count += 1
+            numbers.remove(i)
+print(numbers)
+print(sum(numbers))
+# Python - Chapter 7 - Q6
+# Sum a list except for the first even number
+words = ['cat', 'dog', 'bing', 'frog', 'wing', 'sam', 'sling', 'die', 'suicide']
+words_two = []
+count = 0
+for i in words:
+    words_two.append(i)
+    count += 1
+    if i == 'sam':
+        break
+print(words_two)
+print(count)
