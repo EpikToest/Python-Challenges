@@ -1,0 +1,189 @@
+# Question 1
+week_day = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+day_num = int(input('Enter day number: '))
+print(week_day[day_num])
+
+# Question 2
+
+print('~You went to Jail!~')
+
+week_day = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+
+start = int(input("Enter start day number: "))
+
+
+sentence_length = int(input("How long is your sentence?\n"))
+
+end_num = int(sentence_length % 7)
+
+print(week_day[(end_num + start)])
+
+# Question 3
+# Give the logical opposites of these conditions
+
+# 1. a > b
+# 2. a >= b
+# 3. a >= 18  and  day == 3
+# 4. a >= 18  and  day != 3
+
+# 1. a <= b
+# 2. a < b
+# 3. a < 18 or day != 3
+# 4. a < 18 or day == 3
+
+# Question 4
+# What do these expressions evaluate to?
+
+# 1. 3 == 3
+# 2. 3 != 3
+# 3. 3 >= 4
+# 4. not (3 < 4)
+
+# 1. True
+# 2. False
+# 3. False
+# 4. False
+
+print(3 == 3)
+print(3 != 3)
+print(3 >= 4)
+print(not (3 < 4))
+
+# Question 5
+# Complete this truth table:
+
+#   p   q   r       (not (p and q)) or r
+
+#   F   F   F       True
+
+#   F   F   T       True
+
+#   F   T   F       True
+
+#   F   T   T       True
+
+#   T   F   F       True
+
+#   T   F   T       True
+
+#   T   T   F       False
+
+#   T   T   T       True
+
+
+p = True
+
+q = True
+
+r = True
+
+print((not (p and q)) or r)
+
+# Question 6
+# Write a function which is given an exam mark, and it returns the grade for that mark
+
+grade = ['F3', 'F2', 'F1 Supp', 'Third', 'Second', 'Upper Second', 'First']
+
+mark = [83, 75, 74.9, 70, 69.9, 65, 60, 59.9, 55, 50, 49.9, 45, 44.9, 40, 39.9, 2, 0]
+
+marks = int(input("Enter mark: "))
+
+def exam_grade(xs):
+    if xs >= 75:
+        print(grade[6])
+        
+exam_grade(marks)
+
+
+# Question 7
+# Modify the turtle bar chart program so that the pen is up for the small gaps between each bar.
+
+import turtle
+
+def draw_bar(t, height):
+    """ Get turtle t to draw one bar, of height. """
+    t.begin_fill()           # Added this line
+    t.left(90)
+    t.forward(height)
+    t.write("  "+ str(height))
+    t.right(90)
+    t.forward(40)
+    t.right(90)
+    t.forward(height)
+    t.left(90)
+    t.end_fill() # Added this line
+    t.penup()
+    t.forward(10)
+    t.pendown()
+
+wn = turtle.Screen()         # Set up the window and its attributes
+wn.bgcolor("lightgreen")
+
+tess = turtle.Turtle()       # Create tess and set some attributes
+tess.color("blue", "red")
+tess.pensize(3)
+
+xs = [48,117,200,240,160,260,220]
+
+for a in xs:
+    draw_bar(tess, a)
+
+wn.mainloop()
+
+# Question 8
+# Modify the turtle bar chart program so that the pen is up for the small gaps between each bar.
+
+import turtle
+
+def draw_bar(t, height):
+    """ Get turtle t to draw one bar, of height. """
+    t.begin_fill()           # Added this line
+    t.left(90)
+    t.forward(height)
+    t.write("  "+ str(height))
+    t.right(90)
+    t.forward(40)
+    t.right(90)
+    t.forward(height)
+    t.left(90)
+    t.end_fill() # Added this line
+    t.penup()
+    t.forward(10)
+    t.pendown()
+
+wn = turtle.Screen()         # Set up the window and its attributes
+wn.bgcolor("black")
+
+fill_color = " "
+
+xs = [48, 117, 200, 240, 160, 260, 220]
+
+# for i in xs:
+#     if xs[i] >= 200:
+#         fill_color = "red"
+#     elif xs[i] <= 100:
+#         fill_color = "green"
+
+fill_color = "red"
+
+tess = turtle.Turtle()       # Create tess and set some attributes
+tess.color("blue", fill_color)
+tess.pensize(3)
+
+for a in xs:
+    draw_bar(tess, a)
+
+wn.mainloop()
+
+
+
+
+
+
+
+
+
+
+
+
+
