@@ -1,0 +1,99 @@
+# Question 1
+
+import turtle
+
+wn = turtle.Screen()        # Set up the window and its attributes
+wn.bgcolor("black")
+
+x = turtle.Turtle()
+x.color('white')
+x.pensize(3)
+
+for i in range(5):
+    x.forward(20)
+    x.left(90)
+    x.forward(20)
+    x.left(90)
+    x.forward(20)
+    x.left(90)
+    x.forward(20)
+    x.left(90)
+    x.forward(20)
+    x.penup()
+    x.forward(20)
+    x.pendown()
+
+
+
+wn.mainloop()
+
+# Question 2
+
+import turtle
+
+
+def draw_suqare(t, sz):
+    for i in range(4):
+        t.forward(sz)
+        t.left(90)
+
+wn = turtle.Screen()        # Set up the window and its attributes
+wn.bgcolor("black")
+
+x = turtle.Turtle()
+x.color('white')
+x.pensize(3)
+
+for size in range(20, 120, 20):
+    draw_suqare(x, size)
+    x.penup()
+    x.backward(10)
+    x.left(90)
+    x.backward(10)
+    x.right(90)
+    x.pendown()
+
+
+wn.mainloop()
+
+# Question 3
+
+import turtle
+
+wn = turtle.Screen()        # Set up the window and its attributes
+wn.bgcolor("black")
+
+x = turtle.Turtle()
+x.color('white')
+x.pensize(3)
+
+for i in range(8):
+    x.forward(50)
+    x.left(45)
+
+wn.mainloop()
+
+# Question 4
+
+import turtle
+
+wn = turtle.Screen()        # Set up the window and its attributes
+wn.bgcolor("black")
+
+x = turtle.Turtle()
+x.color('white')
+x.pensize(3)
+
+def draw_square(t, sz):
+     """Make turtle t draw a square of sz."""
+     for i in range(3):
+         t.forward(sz)
+         t.right(90)
+
+for i in range(20):
+    draw_square(x, 50)
+    x.forward(50)
+    x.right()
+
+wn.mainloop()
+
