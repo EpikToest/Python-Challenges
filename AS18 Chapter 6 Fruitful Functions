@@ -1,0 +1,42 @@
+# Question 1
+def turn_clockwise(direct):
+    if direct == "N":
+        print("E")
+    if direct == "E":
+        print("S")
+    if direct == "S":
+        print("W")
+    if direct == "W":
+        print("N")
+    if direct not in ["N", "E", "S", "W"]:
+        print("none")
+
+turn_clockwise(42)
+
+# Question 2
+week_day = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+
+
+def day_name(day_num):
+    if day_num < 8:
+        print(week_day[day_num])
+    if day_num >= 8:
+        print("None")
+
+day_name(8)
+
+
+#Question 3
+week_day = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+
+
+def day_name(day_num):
+    if day_num == 'Monday':
+        print(week_day[day_num])
+    if day_num >= 8:
+        print("None")
+
+day_name(8)
+
+# Question 4
+
